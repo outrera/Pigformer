@@ -3,11 +3,10 @@
 [ext_resource path="res://Entities/Characters/Character.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Sprites/Bancia.png" type="Texture" id=2]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 7.41648
-height = 16.2503
+extents = Vector2( 10, 15.7683 )
 
 [sub_resource type="Animation" id=2]
 
