@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Pigformer"
+run/main_scene="res://Entities/Maps/Map.tscn"
 config/icon="res://icon.png"
 
 [autoload]
