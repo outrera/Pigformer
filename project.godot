@@ -16,7 +16,6 @@ _global_script_class_icons={
 [application]
 
 config/name="Pigformer"
-run/main_scene="res://Entities/Maps/Map.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -58,6 +57,10 @@ ui_down={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":13,"pressure":0.0,"pressed":false,"script":null)
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
  ]
+}
+up={
+"deadzone": 0.5,
+"events": [  ]
 }
 
 [rendering]
