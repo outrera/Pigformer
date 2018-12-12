@@ -2,11 +2,13 @@ extends Node2D
 
 const FLOOR_NORMAL = Vector2(0, -1)
 const SLOPE_SLIDE_STOP = 25.0
-const WALK_SPEED = 150 # pixels/sec
 const GRAVITY = 500
-const JUMP_SPEED = 15000
 const SIDING_CHANGE_SPEED = 10
 const STOP_ANIMATION_THRESHOLD = 5
+
+#We declare them as vars to let subclasses change this
+var WALK_SPEED = 150 # pixels/sec
+var JUMP_SPEED = 15000
 
 
 var linear_vel : Vector2 = Vector2(0,0)
