@@ -1,33 +1,31 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Entities/Characters/Player2.gd" type="Script" id=1]
+[ext_resource path="res://addons/Player/player.gd" type="Script" id=1]
 [ext_resource path="res://Graphics/Sprites/Bancia.png" type="Texture" id=2]
-[ext_resource path="res://Entities/Items/chain.tscn" type="PackedScene" id=3]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="RayShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 16.0229
-height = 30.2452
+length = 36.0053
+slips_on_slope = false
 
-[node name="Player2" type="RigidBody2D"]
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 13.9244
+height = 26.148
+
+[node name="Player2" type="KinematicBody2D"]
+position = Vector2( 0, 100751 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
-mode = 2
-mass = 10.0
-gravity_scale = 8.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
-can_sleep = false
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
-angular_damp = -1.0
+collision/safe_margin = 0.08
+motion/sync_to_physics = false
 script = ExtResource( 1 )
+run_speed = 100
+jump_speed = -400
+gravity = 1200
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 2, 2 )
@@ -36,7 +34,10 @@ hframes = 9
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.739464, -6.78103 )
 shape = SubResource( 1 )
 
-[node name="Chain" parent="." instance=ExtResource( 3 )]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 0.889351, -5.23016 )
+shape = SubResource( 2 )
 

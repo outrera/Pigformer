@@ -28,6 +28,10 @@ gdscript/warnings/treat_warnings_as_errors=true
 gdscript/warnings/unsafe_cast=true
 gdscript/warnings/unsafe_call_argument=true
 
+[editor_plugins]
+
+enabled=PoolStringArray( "Player" )
+
 [input]
 
 ui_accept={
@@ -78,10 +82,6 @@ ui_down={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
  ]
 }
-up={
-"deadzone": 0.5,
-"events": [  ]
-}
 ui_page_up={
 "deadzone": 0.5,
 "events": [  ]
@@ -95,6 +95,10 @@ ui_home={
 "events": [  ]
 }
 ui_end={
+"deadzone": 0.5,
+"events": [  ]
+}
+up={
 "deadzone": 0.5,
 "events": [  ]
 }
